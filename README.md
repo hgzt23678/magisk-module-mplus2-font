@@ -1,6 +1,6 @@
-#### Mejiro Font
+#### M Plus2 Font
 
-M PLus font patch for Japanese users.
+M PLus2 font patch for Japanese users.
 It's a fork of AndroPlus's module.
 
 #### NOTICE
