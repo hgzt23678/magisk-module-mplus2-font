@@ -1,11 +1,12 @@
 #### M Plus2 Font
 
-M PLus2 font patch for Japanese users.
-It's a fork of AndroPlus's module.
+日本語ユーザーに向けたM PLUS2フォントパッチです。
+AndroPlus氏のモジュールが元となっております。
 
-#### NOTICE
+#### 重要
 
-* You should use latest Magisk Manager to install this module. If you meet any problem under installation from Magisk Manager, please try to install it from recovery.
+* このモジュールをインストールするには最新のMagiskを使用することをお勧めします。
+  古いバージョンでインストールして何か起きても知りませんからね？
 
 ## License
 

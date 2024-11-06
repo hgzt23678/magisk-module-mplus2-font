@@ -1,8 +1,6 @@
-id=font-mejiro-oshi
-name=Mejiro Font
-version=v22
-versionCode=22
-author=AndroPlus
-description=Mejiro font patch for Japanese users.
-donate=https://github.com/sponsors/AndroPlus-org?frequency=one-time
-updateJson=https://raw.githubusercontent.com/AndroPlus-org/magisk-module-mejiro-font/master/update.json
+id=font-mplus2
+name=MPLUS2 Font
+version=v28
+versionCode=28
+author=hgzt23678
+description=MPLUS font patch for Japanese users.
