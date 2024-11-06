@@ -1,7 +1,7 @@
 #### Mejiro Font
 
-Mejiro font patch for Japanese users.
-Tested on OnePlus 9 Pro (Android 11) / Google Pixel 6 Pro (Android 12).
+M PLus font patch for Japanese users.
+It's a fork of AndroPlus's module.
 
 #### NOTICE
 
