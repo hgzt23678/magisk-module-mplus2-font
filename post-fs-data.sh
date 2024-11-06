@@ -23,16 +23,16 @@ add_ja() {
 	if [ -e $MODDIR/system/fonts/disable-extra-weights ] ; then
 		if [ $APILEVEL -ge 31 ] ; then
 			#Android 12 and later
-			sed -i 's@<family lang="zh-Hans">@<family lang="ja">\n        <font weight="300" style="normal" postScriptName="NotoSansCJKjp-Regular">Mejiro-Light.ttf</font>\n        <font weight="400" style="normal" postScriptName="NotoSansCJKjp-Regular">Mejiro-Regular.ttf</font>\n        <font weight="600" style="normal" postScriptName="NotoSansCJKjp-Regular">Mejiro-Semibold.ttf</font>\n        <font weight="700" style="normal" postScriptName="NotoSansCJKjp-Regular">Mejiro-Bold.ttf</font>\n        <font weight="300" style="normal" postScriptName="NotoSansCJKjp-Regular" fallbackFor="serif">Mejiro-Light.ttf</font>\n        <font weight="400" style="normal" postScriptName="NotoSansCJKjp-Regular" fallbackFor="serif">Mejiro-Regular.ttf</font>\n        <font weight="600" style="normal" postScriptName="NotoSansCJKjp-Regular" fallbackFor="serif">Mejiro-Semibold.ttf</font>\n        <font weight="700" style="normal" postScriptName="NotoSansCJKjp-Regular" fallbackFor="serif">Mejiro-Bold.ttf</font>\n    </family>\n    <family lang="zh-Hans">@g' $1
+			sed -i 's@<family lang="zh-Hans">@<family lang="ja">\n        <font weight="300" style="normal" postScriptName="NotoSansCJKjp-Regular">MPLUS2-Light.ttf</font>\n        <font weight="400" style="normal" postScriptName="NotoSansCJKjp-Regular">MPLUS2-Regular.ttf</font>\n        <font weight="600" style="normal" postScriptName="NotoSansCJKjp-Regular">MPLUS2-Semibold.ttf</font>\n        <font weight="700" style="normal" postScriptName="NotoSansCJKjp-Regular">MPLUS2-Bold.ttf</font>\n        <font weight="300" style="normal" postScriptName="NotoSansCJKjp-Regular" fallbackFor="serif">MPLUS2-Light.ttf</font>\n        <font weight="400" style="normal" postScriptName="NotoSansCJKjp-Regular" fallbackFor="serif">MPLUS2-Regular.ttf</font>\n        <font weight="600" style="normal" postScriptName="NotoSansCJKjp-Regular" fallbackFor="serif">MPLUS2-Semibold.ttf</font>\n        <font weight="700" style="normal" postScriptName="NotoSansCJKjp-Regular" fallbackFor="serif">MPLUS2-Bold.ttf</font>\n    </family>\n    <family lang="zh-Hans">@g' $1
 		else
-			sed -i 's@<family lang="zh-Hans">@<family lang="ja">\n        <font weight="300" style="normal">Mejiro-Light.ttf</font>\n        <font weight="400" style="normal">Mejiro-Regular.ttf</font>\n        <font weight="600" style="normal">Mejiro-Semibold.ttf</font>\n        <font weight="700" style="normal">Mejiro-Bold.ttf</font>\n        <font weight="300" style="normal" fallbackFor="serif">Mejiro-Light.ttf</font>\n        <font weight="400" style="normal" fallbackFor="serif">Mejiro-Regular.ttf</font>\n        <font weight="600" style="normal" fallbackFor="serif">Mejiro-Semibold.ttf</font>\n        <font weight="700" style="normal" fallbackFor="serif">Mejiro-Bold.ttf</font>\n    </family>\n    <family lang="zh-Hans">@g' $1
+			sed -i 's@<family lang="zh-Hans">@<family lang="ja">\n        <font weight="300" style="normal">MPLUS2-Light.ttf</font>\n        <font weight="400" style="normal">MPLUS2-Regular.ttf</font>\n        <font weight="600" style="normal">MPLUS2-Semibold.ttf</font>\n        <font weight="700" style="normal">MPLUS2-Bold.ttf</font>\n        <font weight="300" style="normal" fallbackFor="serif">MPLUS2-Light.ttf</font>\n        <font weight="400" style="normal" fallbackFor="serif">MPLUS2-Regular.ttf</font>\n        <font weight="600" style="normal" fallbackFor="serif">MPLUS2-Semibold.ttf</font>\n        <font weight="700" style="normal" fallbackFor="serif">MPLUS2-Bold.ttf</font>\n    </family>\n    <family lang="zh-Hans">@g' $1
 		fi
 	else
 		if [ $APILEVEL -ge 31 ] ; then
 			#Android 12 and later
-			sed -i 's@<family lang="zh-Hans">@<family lang="ja">\n        <font weight="100" style="normal" postScriptName="NotoSansCJKjp-Regular">Mejiro-Thin.ttf</font>\n        <font weight="300" style="normal" postScriptName="NotoSansCJKjp-Regular">Mejiro-Light.ttf</font>\n        <font weight="400" style="normal" postScriptName="NotoSansCJKjp-Regular">Mejiro-Regular.ttf</font>\n        <font weight="600" style="normal" postScriptName="NotoSansCJKjp-Regular">Mejiro-Semibold.ttf</font>\n        <font weight="700" style="normal" postScriptName="NotoSansCJKjp-Regular">Mejiro-Bold.ttf</font>\n        <font weight="800" style="normal" postScriptName="NotoSansCJKjp-Regular">Mejiro-Extrabold.ttf</font>\n        <font weight="100" style="normal" postScriptName="NotoSansCJKjp-Regular" fallbackFor="serif">Mejiro-Thin.ttf</font>\n        <font weight="300" style="normal" postScriptName="NotoSansCJKjp-Regular" fallbackFor="serif">Mejiro-Light.ttf</font>\n        <font weight="400" style="normal" postScriptName="NotoSansCJKjp-Regular" fallbackFor="serif">Mejiro-Regular.ttf</font>\n        <font weight="600" style="normal" postScriptName="NotoSansCJKjp-Regular" fallbackFor="serif">Mejiro-Semibold.ttf</font>\n        <font weight="700" style="normal" postScriptName="NotoSansCJKjp-Regular" fallbackFor="serif">Mejiro-Bold.ttf</font>\n        <font weight="800" style="normal" postScriptName="NotoSansCJKjp-Regular" fallbackFor="serif">Mejiro-Extrabold.ttf</font>\n    </family>\n    <family lang="zh-Hans">@g' $1
+			sed -i 's@<family lang="zh-Hans">@<family lang="ja">\n        <font weight="100" style="normal" postScriptName="NotoSansCJKjp-Regular">MPLUS2-Thin.ttf</font>\n        <font weight="300" style="normal" postScriptName="NotoSansCJKjp-Regular">MPLUS2-Light.ttf</font>\n        <font weight="400" style="normal" postScriptName="NotoSansCJKjp-Regular">MPLUS2-Regular.ttf</font>\n        <font weight="600" style="normal" postScriptName="NotoSansCJKjp-Regular">MPLUS2-Semibold.ttf</font>\n        <font weight="700" style="normal" postScriptName="NotoSansCJKjp-Regular">MPLUS2-Bold.ttf</font>\n        <font weight="800" style="normal" postScriptName="NotoSansCJKjp-Regular">MPLUS2-Extrabold.ttf</font>\n        <font weight="100" style="normal" postScriptName="NotoSansCJKjp-Regular" fallbackFor="serif">MPLUS2-Thin.ttf</font>\n        <font weight="300" style="normal" postScriptName="NotoSansCJKjp-Regular" fallbackFor="serif">MPLUS2-Light.ttf</font>\n        <font weight="400" style="normal" postScriptName="NotoSansCJKjp-Regular" fallbackFor="serif">MPLUS2-Regular.ttf</font>\n        <font weight="600" style="normal" postScriptName="NotoSansCJKjp-Regular" fallbackFor="serif">MPLUS2-Semibold.ttf</font>\n        <font weight="700" style="normal" postScriptName="NotoSansCJKjp-Regular" fallbackFor="serif">MPLUS2-Bold.ttf</font>\n        <font weight="800" style="normal" postScriptName="NotoSansCJKjp-Regular" fallbackFor="serif">MPLUS2-Extrabold.ttf</font>\n    </family>\n    <family lang="zh-Hans">@g' $1
 		else
-			sed -i 's@<family lang="zh-Hans">@<family lang="ja">\n        <font weight="100" style="normal">Mejiro-Thin.ttf</font>\n        <font weight="300" style="normal">Mejiro-Light.ttf</font>\n        <font weight="400" style="normal">Mejiro-Regular.ttf</font>\n        <font weight="600" style="normal">Mejiro-Semibold.ttf</font>\n        <font weight="700" style="normal">Mejiro-Bold.ttf</font>\n        <font weight="800" style="normal">Mejiro-Extrabold.ttf</font>\n        <font weight="100" style="normal" fallbackFor="serif">Mejiro-Thin.ttf</font>\n        <font weight="300" style="normal" fallbackFor="serif">Mejiro-Light.ttf</font>\n        <font weight="400" style="normal" fallbackFor="serif">Mejiro-Regular.ttf</font>\n        <font weight="600" style="normal" fallbackFor="serif">Mejiro-Semibold.ttf</font>\n        <font weight="700" style="normal" fallbackFor="serif">Mejiro-Bold.ttf</font>\n        <font weight="800" style="normal" fallbackFor="serif">Mejiro-Extrabold.ttf</font>\n    </family>\n    <family lang="zh-Hans">@g' $1
+			sed -i 's@<family lang="zh-Hans">@<family lang="ja">\n        <font weight="100" style="normal">MPLUS2-Thin.ttf</font>\n        <font weight="300" style="normal">MPLUS2-Light.ttf</font>\n        <font weight="400" style="normal">MPLUS2-Regular.ttf</font>\n        <font weight="600" style="normal">MPLUS2-Semibold.ttf</font>\n        <font weight="700" style="normal">MPLUS2-Bold.ttf</font>\n        <font weight="800" style="normal">MPLUS2-Extrabold.ttf</font>\n        <font weight="100" style="normal" fallbackFor="serif">MPLUS2-Thin.ttf</font>\n        <font weight="300" style="normal" fallbackFor="serif">MPLUS2-Light.ttf</font>\n        <font weight="400" style="normal" fallbackFor="serif">MPLUS2-Regular.ttf</font>\n        <font weight="600" style="normal" fallbackFor="serif">MPLUS2-Semibold.ttf</font>\n        <font weight="700" style="normal" fallbackFor="serif">MPLUS2-Bold.ttf</font>\n        <font weight="800" style="normal" fallbackFor="serif">MPLUS2-Extrabold.ttf</font>\n    </family>\n    <family lang="zh-Hans">@g' $1
 		fi
 	fi
 }
@@ -92,8 +92,8 @@ if [ -e /system/product/fonts/MiSansTCVF.ttf ]; then
 fi
 
 #Goodbye, vivo Font
-sed -i 's@VivoFont.ttf@Mejiro-Regular.ttf@g' $MODDIR/system/etc/fonts.xml
-sed -i 's@DroidSansFallbackBBK.ttf@Mejiro-Regular.ttf@g' $MODDIR/system/etc/fonts.xml
+sed -i 's@VivoFont.ttf@MPLUS2-Regular.ttf@g' $MODDIR/system/etc/fonts.xml
+sed -i 's@DroidSansFallbackBBK.ttf@MPLUS2-Regular.ttf@g' $MODDIR/system/etc/fonts.xml
 if [ -e /system/fonts/HYQiHei-50.ttf ]; then
 cp /system/fonts/Roboto-Regular.ttf $MODDIR/system/fonts/HYQiHei-50.ttf
 fi
@@ -119,13 +119,13 @@ if [ -e /system/etc/$opslate ]; then
 	remove_ja $MODDIR/system/etc/$opslate
 	add_ja $MODDIR/system/etc/$opslate
 
-	sed -i 's@SlateForOnePlus-Thin.ttf@Mejiro-Light.ttf@g' $MODDIR/system/etc/$opslate
-	sed -i 's@SlateForOnePlus-Light.ttf@Mejiro-Light.ttf@g' $MODDIR/system/etc/$opslate
-	sed -i 's@SlateForOnePlus-Book.ttf@Mejiro-Regular.ttf@g' $MODDIR/system/etc/$opslate
-	sed -i 's@SlateForOnePlus-Regular.ttf@Mejiro-Regular.ttf@g' $MODDIR/system/etc/$opslate
-	sed -i 's@SlateForOnePlus-Medium.ttf@Mejiro-Semibold.ttf@g' $MODDIR/system/etc/$opslate
-	sed -i 's@SlateForOnePlus-Bold.ttf@Mejiro-Bold.ttf@g' $MODDIR/system/etc/$opslate
-	sed -i 's@SlateForOnePlus-Black.ttf@Mejiro-Extrabold.ttf@g' $MODDIR/system/etc/$opslate
+	sed -i 's@SlateForOnePlus-Thin.ttf@MPLUS2-Light.ttf@g' $MODDIR/system/etc/$opslate
+	sed -i 's@SlateForOnePlus-Light.ttf@MPLUS2-Light.ttf@g' $MODDIR/system/etc/$opslate
+	sed -i 's@SlateForOnePlus-Book.ttf@MPLUS2-Regular.ttf@g' $MODDIR/system/etc/$opslate
+	sed -i 's@SlateForOnePlus-Regular.ttf@MPLUS2-Regular.ttf@g' $MODDIR/system/etc/$opslate
+	sed -i 's@SlateForOnePlus-Medium.ttf@MPLUS2-Semibold.ttf@g' $MODDIR/system/etc/$opslate
+	sed -i 's@SlateForOnePlus-Bold.ttf@MPLUS2-Bold.ttf@g' $MODDIR/system/etc/$opslate
+	sed -i 's@SlateForOnePlus-Black.ttf@MPLUS2-Extrabold.ttf@g' $MODDIR/system/etc/$opslate
 fi
 
 #Copy fonts_base.xml for OnePlus OxygenOS 11
@@ -157,26 +157,26 @@ fi
 oos12c=fonts_customization.xml
 if [ -e /system/system_ext/etc/$oos12c ]; then
     cp /system/system_ext/etc/$oos12c $MODDIR/system/system_ext/etc
-	sed -i 's@OplusSansText-25Th@Mejiro-Light@g' $MODDIR/system/system_ext/etc/$oos12c
-	sed -i 's@OplusSansText-35ExLt@Mejiro-Light@g' $MODDIR/system/system_ext/etc/$oos12c
-	sed -i 's@OplusSansText-45Lt@Mejiro-Light@g' $MODDIR/system/system_ext/etc/$oos12c
-	sed -i 's@OplusSansText-55Rg@Mejiro-Regular@g' $MODDIR/system/system_ext/etc/$oos12c
-	sed -i 's@OplusSansText-65Md@Mejiro-Semibold@g' $MODDIR/system/system_ext/etc/$oos12c
-	sed -i 's@NHGMYHOplusHK-W4@Mejiro-Regular@g' $MODDIR/system/system_ext/etc/$oos12c
-	sed -i 's@NHGMYHOplusPRC-W4@Mejiro-Regular@g' $MODDIR/system/system_ext/etc/$oos12c
-	sed -i 's@OplusSansDisplay-45Lt@Mejiro-Light@g' $MODDIR/system/system_ext/etc/$oos12c
+	sed -i 's@OplusSansText-25Th@MPLUS2-Light@g' $MODDIR/system/system_ext/etc/$oos12c
+	sed -i 's@OplusSansText-35ExLt@MPLUS2-Light@g' $MODDIR/system/system_ext/etc/$oos12c
+	sed -i 's@OplusSansText-45Lt@MPLUS2-Light@g' $MODDIR/system/system_ext/etc/$oos12c
+	sed -i 's@OplusSansText-55Rg@MPLUS2-Regular@g' $MODDIR/system/system_ext/etc/$oos12c
+	sed -i 's@OplusSansText-65Md@MPLUS2-Semibold@g' $MODDIR/system/system_ext/etc/$oos12c
+	sed -i 's@NHGMYHOplusHK-W4@MPLUS2-Regular@g' $MODDIR/system/system_ext/etc/$oos12c
+	sed -i 's@NHGMYHOplusPRC-W4@MPLUS2-Regular@g' $MODDIR/system/system_ext/etc/$oos12c
+	sed -i 's@OplusSansDisplay-45Lt@MPLUS2-Light@g' $MODDIR/system/system_ext/etc/$oos12c
 fi
 
 #Copy fonts_customization.xml for OnePlus OxygenOS 12+
 oos12p=fonts_customization.xml
 if [ -e /system/product/etc/$oos12p ]; then
     cp /system/product/etc/$oos12p $MODDIR/system/product/etc
-	sed -i 's@OplusSansText-25Th@Mejiro-Light@g' $MODDIR/system/product/etc/$oos12p
-	sed -i 's@OplusSansText-35ExLt@Mejiro-Light@g' $MODDIR/system/product/etc/$oos12p
-	sed -i 's@OplusSansText-45Lt@Mejiro-Light@g' $MODDIR/system/product/etc/$oos12p
-	sed -i 's@OplusSansText-55Rg@Mejiro-Regular@g' $MODDIR/system/product/etc/$oos12p
-	sed -i 's@OplusSansText-65Md@Mejiro-Semibold@g' $MODDIR/system/product/etc/$oos12p
-	sed -i 's@NHGMYHOplusHK-W4@Mejiro-Regular@g' $MODDIR/system/product/etc/$oos12p
-	sed -i 's@NHGMYHOplusPRC-W4@Mejiro-Regular@g' $MODDIR/system/product/etc/$oos12p
-	sed -i 's@OplusSansDisplay-45Lt@Mejiro-Light@g' $MODDIR/system/product/etc/$oos12p
+	sed -i 's@OplusSansText-25Th@MPLUS2-Light@g' $MODDIR/system/product/etc/$oos12p
+	sed -i 's@OplusSansText-35ExLt@MPLUS2-Light@g' $MODDIR/system/product/etc/$oos12p
+	sed -i 's@OplusSansText-45Lt@MPLUS2-Light@g' $MODDIR/system/product/etc/$oos12p
+	sed -i 's@OplusSansText-55Rg@MPLUS2-Regular@g' $MODDIR/system/product/etc/$oos12p
+	sed -i 's@OplusSansText-65Md@MPLUS2-Semibold@g' $MODDIR/system/product/etc/$oos12p
+	sed -i 's@NHGMYHOplusHK-W4@MPLUS2-Regular@g' $MODDIR/system/product/etc/$oos12p
+	sed -i 's@NHGMYHOplusPRC-W4@MPLUS2-Regular@g' $MODDIR/system/product/etc/$oos12p
+	sed -i 's@OplusSansDisplay-45Lt@MPLUS2-Light@g' $MODDIR/system/product/etc/$oos12p
 fi
