@@ -114,7 +114,7 @@ sed -i 's@Sansita-@Roboto-@g' $MODDIR/system/etc/fonts.xml
 opslate=fonts_slate.xml
 if [ -e /system/etc/$opslate ]; then
     cp /system/etc/$opslate $MODDIR/system/etc
-	
+
 	#Change fonts_slate.xml file
 	remove_ja $MODDIR/system/etc/$opslate
 	add_ja $MODDIR/system/etc/$opslate
@@ -132,7 +132,7 @@ fi
 oos11=fonts_base.xml
 if [ -e /system/etc/$oos11 ]; then
     cp /system/etc/$oos11 $MODDIR/system/etc
-	
+
 	#Change fonts_slate.xml file
 	remove_ja $MODDIR/system/etc/$oos11
 	add_ja $MODDIR/system/etc/$oos11
@@ -144,7 +144,7 @@ fi
 oos12=fonts_base.xml
 if [ -e /system/system_ext/etc/$oos12 ]; then
     cp /system/system_ext/etc/$oos12 $MODDIR/system/system_ext/etc
-	
+
 	#Change fonts_slate.xml file
 	remove_ja $MODDIR/system/system_ext/etc/$oos12
 	add_ja $MODDIR/system/system_ext/etc/$oos12

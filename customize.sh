@@ -29,7 +29,7 @@ chooseport_legacy() {
 chooseport() {
   # Original idea by chainfire and ianmacd @xda-developers
   [ "$1" ] && local delay=$1 || local delay=5
-  local error=false 
+  local error=false
   while true; do
     local count=0
     while true; do
