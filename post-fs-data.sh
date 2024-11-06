@@ -20,20 +20,11 @@ remove_ja() {
 
 #Function to add ja above zh-Hans
 add_ja() {
-	if [ -e $MODDIR/system/fonts/disable-extra-weights ] ; then
-		if [ $APILEVEL -ge 31 ] ; then
+	if [ $APILEVEL -ge 31 ] ; then
 			#Android 12 and later
-			sed -i 's@<family lang="zh-Hans">@<family lang="ja">\n        <font weight="300" style="normal" postScriptName="NotoSansCJKjp-Regular">MPLUS2-Light.ttf</font>\n        <font weight="400" style="normal" postScriptName="NotoSansCJKjp-Regular">MPLUS2-Regular.ttf</font>\n        <font weight="600" style="normal" postScriptName="NotoSansCJKjp-Regular">MPLUS2-Semibold.ttf</font>\n        <font weight="700" style="normal" postScriptName="NotoSansCJKjp-Regular">MPLUS2-Bold.ttf</font>\n        <font weight="300" style="normal" postScriptName="NotoSansCJKjp-Regular" fallbackFor="serif">MPLUS2-Light.ttf</font>\n        <font weight="400" style="normal" postScriptName="NotoSansCJKjp-Regular" fallbackFor="serif">MPLUS2-Regular.ttf</font>\n        <font weight="600" style="normal" postScriptName="NotoSansCJKjp-Regular" fallbackFor="serif">MPLUS2-Semibold.ttf</font>\n        <font weight="700" style="normal" postScriptName="NotoSansCJKjp-Regular" fallbackFor="serif">MPLUS2-Bold.ttf</font>\n    </family>\n    <family lang="zh-Hans">@g' $1
+			sed -i 's@<family lang="zh-Hans">@<family lang="ja">\n        <font weight="300" style="normal" postScriptName="NotoSansCJKjp-Regular">MPLUS2-Light.ttf</font>\n        <font weight="400" style="normal" postScriptName="NotoSansCJKjp-Regular">MPLUS2-Regular.ttf</font>\n        <font weight="500" style="normal" postScriptName="NotoSansCJKjp-Regular">MPLUS2-Medium.ttf</font>\n        <font weight="600" style="normal" postScriptName="NotoSansCJKjp-Regular">MPLUS2-SemiBold.ttf</font>\n        <font weight="700" style="normal" postScriptName="NotoSansCJKjp-Regular">MPLUS2-Bold.ttf</font>\n        <font weight="300" style="normal" postScriptName="NotoSansCJKjp-Regular" fallbackFor="serif">MPLUS2-Light.ttf</font>\n        <font weight="400" style="normal" postScriptName="NotoSansCJKjp-Regular" fallbackFor="serif">MPLUS2-Regular.ttf</font>\n        <font weight="500" style="normal" postScriptName="NotoSansCJKjp-Regular" fallbackFor="serif">MPLUS2-Medium.ttf</font>\n        <font weight="600" style="normal" postScriptName="NotoSansCJKjp-Regular" fallbackFor="serif">MPLUS2-SemiBold.ttf</font>\n        <font weight="700" style="normal" postScriptName="NotoSansCJKjp-Regular" fallbackFor="serif">MPLUS2-Bold.ttf</font>\n    </family>\n    <family lang="zh-Hans">@g' $1
 		else
-			sed -i 's@<family lang="zh-Hans">@<family lang="ja">\n        <font weight="300" style="normal">MPLUS2-Light.ttf</font>\n        <font weight="400" style="normal">MPLUS2-Regular.ttf</font>\n        <font weight="600" style="normal">MPLUS2-Semibold.ttf</font>\n        <font weight="700" style="normal">MPLUS2-Bold.ttf</font>\n        <font weight="300" style="normal" fallbackFor="serif">MPLUS2-Light.ttf</font>\n        <font weight="400" style="normal" fallbackFor="serif">MPLUS2-Regular.ttf</font>\n        <font weight="600" style="normal" fallbackFor="serif">MPLUS2-Semibold.ttf</font>\n        <font weight="700" style="normal" fallbackFor="serif">MPLUS2-Bold.ttf</font>\n    </family>\n    <family lang="zh-Hans">@g' $1
-		fi
-	else
-		if [ $APILEVEL -ge 31 ] ; then
-			#Android 12 and later
-			sed -i 's@<family lang="zh-Hans">@<family lang="ja">\n        <font weight="100" style="normal" postScriptName="NotoSansCJKjp-Regular">MPLUS2-Thin.ttf</font>\n        <font weight="300" style="normal" postScriptName="NotoSansCJKjp-Regular">MPLUS2-Light.ttf</font>\n        <font weight="400" style="normal" postScriptName="NotoSansCJKjp-Regular">MPLUS2-Regular.ttf</font>\n        <font weight="600" style="normal" postScriptName="NotoSansCJKjp-Regular">MPLUS2-Semibold.ttf</font>\n        <font weight="700" style="normal" postScriptName="NotoSansCJKjp-Regular">MPLUS2-Bold.ttf</font>\n        <font weight="800" style="normal" postScriptName="NotoSansCJKjp-Regular">MPLUS2-Extrabold.ttf</font>\n        <font weight="100" style="normal" postScriptName="NotoSansCJKjp-Regular" fallbackFor="serif">MPLUS2-Thin.ttf</font>\n        <font weight="300" style="normal" postScriptName="NotoSansCJKjp-Regular" fallbackFor="serif">MPLUS2-Light.ttf</font>\n        <font weight="400" style="normal" postScriptName="NotoSansCJKjp-Regular" fallbackFor="serif">MPLUS2-Regular.ttf</font>\n        <font weight="600" style="normal" postScriptName="NotoSansCJKjp-Regular" fallbackFor="serif">MPLUS2-Semibold.ttf</font>\n        <font weight="700" style="normal" postScriptName="NotoSansCJKjp-Regular" fallbackFor="serif">MPLUS2-Bold.ttf</font>\n        <font weight="800" style="normal" postScriptName="NotoSansCJKjp-Regular" fallbackFor="serif">MPLUS2-Extrabold.ttf</font>\n    </family>\n    <family lang="zh-Hans">@g' $1
-		else
-			sed -i 's@<family lang="zh-Hans">@<family lang="ja">\n        <font weight="100" style="normal">MPLUS2-Thin.ttf</font>\n        <font weight="300" style="normal">MPLUS2-Light.ttf</font>\n        <font weight="400" style="normal">MPLUS2-Regular.ttf</font>\n        <font weight="600" style="normal">MPLUS2-Semibold.ttf</font>\n        <font weight="700" style="normal">MPLUS2-Bold.ttf</font>\n        <font weight="800" style="normal">MPLUS2-Extrabold.ttf</font>\n        <font weight="100" style="normal" fallbackFor="serif">MPLUS2-Thin.ttf</font>\n        <font weight="300" style="normal" fallbackFor="serif">MPLUS2-Light.ttf</font>\n        <font weight="400" style="normal" fallbackFor="serif">MPLUS2-Regular.ttf</font>\n        <font weight="600" style="normal" fallbackFor="serif">MPLUS2-Semibold.ttf</font>\n        <font weight="700" style="normal" fallbackFor="serif">MPLUS2-Bold.ttf</font>\n        <font weight="800" style="normal" fallbackFor="serif">MPLUS2-Extrabold.ttf</font>\n    </family>\n    <family lang="zh-Hans">@g' $1
-		fi
+ 			sed -i 's@<family lang="zh-Hans">@<family lang="ja">\n        <font weight="300" style="normal">MPLUS2-Light.ttf</font>\n        <font weight="400" style="normal">MPLUS2-Regular.ttf</font>\n        <font weight="500" style="normal">MPLUS2-Medium.ttf</font>\n        <font weight="600" style="normal">MPLUS2-SemiBold.ttf</font>\n        <font weight="700" style="normal">MPLUS2-Bold.ttf</font>\n        <font weight="300" style="normal" fallbackFor="serif">MPLUS2-Light.ttf</font>\n        <font weight="400" style="normal" fallbackFor="serif">MPLUS2-Regular.ttf</font>\n        <font weight="500" style="normal" fallbackFor="serif">MPLUS2-Medium.ttf</font>\n        <font weight="600" style="normal" fallbackFor="serif">MPLUS2-SemiBold.ttf</font>\n        <font weight="700" style="normal" fallbackFor="serif">MPLUS2-Bold.ttf</font>\n    </family>\n    <family lang="zh-Hans">@g' $1
 	fi
 }
 
@@ -83,13 +74,6 @@ sed -i 's@MiSansVF_Overlay.ttf@Roboto-Regular.ttf@g' $MODDIR/system/etc/fonts.xm
 if [ -e /system/fonts/MiSansVF_Overlay.ttf ]; then
 	cp /system/fonts/Roboto-Regular.ttf $MODDIR/system/fonts/MiSansVF_Overlay.ttf
 fi
-#For HyperOS CN 1.0
-if [ -e /system/fonts/MiSansTCVF.ttf ]; then
-	cp /system/fonts/Roboto-Regular.ttf $MODDIR/system/fonts/MiSansTCVF.ttf
-fi
-if [ -e /system/product/fonts/MiSansTCVF.ttf ]; then
-	cp /system/fonts/Roboto-Regular.ttf $MODDIR/system/product/fonts/MiSansTCVF.ttf
-fi
 
 #Goodbye, vivo Font
 sed -i 's@VivoFont.ttf@MPLUS2-Regular.ttf@g' $MODDIR/system/etc/fonts.xml
@@ -114,7 +98,7 @@ sed -i 's@Sansita-@Roboto-@g' $MODDIR/system/etc/fonts.xml
 opslate=fonts_slate.xml
 if [ -e /system/etc/$opslate ]; then
     cp /system/etc/$opslate $MODDIR/system/etc
-
+	
 	#Change fonts_slate.xml file
 	remove_ja $MODDIR/system/etc/$opslate
 	add_ja $MODDIR/system/etc/$opslate
@@ -123,16 +107,16 @@ if [ -e /system/etc/$opslate ]; then
 	sed -i 's@SlateForOnePlus-Light.ttf@MPLUS2-Light.ttf@g' $MODDIR/system/etc/$opslate
 	sed -i 's@SlateForOnePlus-Book.ttf@MPLUS2-Regular.ttf@g' $MODDIR/system/etc/$opslate
 	sed -i 's@SlateForOnePlus-Regular.ttf@MPLUS2-Regular.ttf@g' $MODDIR/system/etc/$opslate
-	sed -i 's@SlateForOnePlus-Medium.ttf@MPLUS2-Semibold.ttf@g' $MODDIR/system/etc/$opslate
+	sed -i 's@SlateForOnePlus-Medium.ttf@MPLUS2-SemiBold.ttf@g' $MODDIR/system/etc/$opslate
 	sed -i 's@SlateForOnePlus-Bold.ttf@MPLUS2-Bold.ttf@g' $MODDIR/system/etc/$opslate
-	sed -i 's@SlateForOnePlus-Black.ttf@MPLUS2-Extrabold.ttf@g' $MODDIR/system/etc/$opslate
+	sed -i 's@SlateForOnePlus-Black.ttf@MPLUS2-Bold.ttf@g' $MODDIR/system/etc/$opslate
 fi
 
 #Copy fonts_base.xml for OnePlus OxygenOS 11
 oos11=fonts_base.xml
 if [ -e /system/etc/$oos11 ]; then
     cp /system/etc/$oos11 $MODDIR/system/etc
-
+	
 	#Change fonts_slate.xml file
 	remove_ja $MODDIR/system/etc/$oos11
 	add_ja $MODDIR/system/etc/$oos11
@@ -144,7 +128,7 @@ fi
 oos12=fonts_base.xml
 if [ -e /system/system_ext/etc/$oos12 ]; then
     cp /system/system_ext/etc/$oos12 $MODDIR/system/system_ext/etc
-
+	
 	#Change fonts_slate.xml file
 	remove_ja $MODDIR/system/system_ext/etc/$oos12
 	add_ja $MODDIR/system/system_ext/etc/$oos12
